@@ -50,9 +50,14 @@ const driversByName = function(drivers) {
   return drivers.slice().sort(function(a,b) {return a.name.localeCompare(b.name)});
 };
 
+// .reduce(function, initial value)
+// it's possible to "reduce" to just an array of something like this
+// .reduce(function, [])
+// or if starting from 0
+// .reduce(function, 0)
 const totalRevenue = function(drivers) {
   return drivers.reduce(function(total, driver) {return driver.revenue + total}, 0);
 };
 
-
+const averageRevenue = function(drivers) {return totalRevenue(drivers)/drivers.length};
 
