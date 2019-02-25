@@ -52,7 +52,4 @@ const driversByName = function(drivers) {
 
 const totalRevenue = function(drivers) {
 
-
-uses the reduce() method to sum the revenue of every driver and return the total ‣
-ReferenceError: totalRevenue is not defined
-    at Context.<anonymous> (test/indexTest.js:84:7)expect(totalRevenue(drivers)).to.equal(18500);
+};
